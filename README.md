@@ -1,2 +1,6 @@
-# Portfolio
-안녕하세요, Mari입니다. (한국어로는 마리라고 불러주세요) 브랜치로 제 코드들을 올려 놓았으니, 많은 관심 부탁드립니다.
+# 🐭 ABOUT ME
+
+Hi, I'm Mari. I'm currently studying Information Security, focusing on low-level systems, C/C++, and reverse engineering.  
+
+***
+
