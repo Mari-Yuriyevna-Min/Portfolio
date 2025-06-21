@@ -4,14 +4,11 @@
 #include<stdlib.h>
 #include<conio.h>
 #include<Windows.h>
-#include <stdbool.h>
 
 
 void compared(int ret);
 int password(char pass0[6], char pass1[6]);
-char plain(char message0[321], int message1[321], int len);
-void returntobinary(int message0[321], int message1[321], int message2[321], int len);
-// int ip(int ip0[5][64][8], int message2[321]);
+char plain(char message0[321], char message1[321], int gett); 
 
 
 int main()
@@ -29,20 +26,13 @@ int main()
 	int ret = password(pass0, pass1);
 	compared(ret);
 
-	char message0[321];
-	int message1[321];
-	int message2[321];
-	plain(message0, message1, message2);
-	int len = 0;
-	void returntobinary(message0, message1, message2, len);
+	char message0[321] = { 0, };
+	char message1[321] = { 0, };
+	int message_array[321] = { 0, };
+	int gett = 0;
 
-	//int ip0[5][64][8];
-	//ip(ip0, message1);
-
-
-
+	plain(message0, message1, gett);
 }
-
 int password(char pass0[6], char pass1[6])
 {
 	int i = 0;
@@ -64,7 +54,6 @@ int password(char pass0[6], char pass1[6])
 	return strcmp(pass0, pass1);
 
 }
-
 void compared(int ret)
 {
 	if (ret == 0)
@@ -79,36 +68,32 @@ void compared(int ret)
 		exit(0);
 	}
 }
-
-char plain(char message0[321], int message1[321], int len)
+char plain(char message0[321], int message1[321], int gett)
 {
 	printf("\n >> Now, Enter your message in 320 charactres!");
+	printf("\n    If you have completed the input, please press the [ Enter key ].");
 	printf("\n : ");
-	fgets(message0, sizeof(message0), stdin);
+	int j = 0;
 
-	if ("\n", message0)
+	while (j < 320)
 	{
-		printf("\n >> GOOD JOB :)\n");
+		gett = getchar();
+		if (gett == '\n')
+		{
+			break;
+		}
+		message0[j++] = gett;
 	}
-
-	len = strlen(message0);
+	message0[j] = '\0';
+	for (int i = 320;i < message0[j];i--)
+	{
+		message0[i] == 0;
+	}
+	printf("\n >> GOOD JOB :)\n");
+	for (int k = 0;k < 320;k++)
+	{
+		message1[k] = message0[k];
+		printf("%d", message1[k]);
+	}
 }
 
-void returntobinary(int message0[321], int message1[321], int message2[321], int len)
-{
-	for (int i = 0;i < len;i++)
-	{
-		message1[i] = (int)message0[i];
-	}
-	for (int i = len - 1; i >= 0; i--)
-	{
-		message2[i] = message1[i] % 2;
-		message1[i] /= 2;
-	}
-
-	for (int j = len;j < 320;j++)
-	{
-		message2[j] = 0;
-	}
-
-}
