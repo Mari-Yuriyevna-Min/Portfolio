@@ -4,6 +4,4 @@ Hi, I'm Mari. I'm currently studying Information Security, focusing on low-level
 
 ## 🔏 Technical Interests
 
-Programming > C99 / C++
-Systems > Assembly(ARM/x86) / Operating Systems
-Security > Vulnerability Research / Reverse Engineering
+C99 / C++ / Assembly(ARM/x86) / Operating Systems / Vulnerability Research / Reverse Engineering
