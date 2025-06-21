@@ -1,4 +1,4 @@
-# 🐭 About Me
+# 🧭 About Me
 
 Hi, I'm Mari/Мари/마리. I'm currently studying Information Security, focusing on low-level systems, C/C++, and reverse engineering.  
 
