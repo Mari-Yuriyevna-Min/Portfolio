@@ -4,4 +4,4 @@ Hi, I'm Mari/Мари/마리. I'm currently studying Information Security, focus
 
 ## 🔏 Technical Interests
 
-C99 / C++ / Assembly(ARM/x86) / Operating Systems / Vulnerability Research / Reverse Engineering
+C99 / C++ / Assembly(ARM/x86) / Binary / Operating Systems / Vulnerability Research / Reverse Engineering
