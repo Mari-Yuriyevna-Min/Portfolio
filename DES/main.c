@@ -8,7 +8,8 @@
 
 void compared(int ret);
 int password(char pass0[6], char pass1[6]);
-char plain(char message0[321], char message1[321], int gett); 
+char plain(char message0[321], int message1[321], int gett); 
+void returntobinary(int message1[321], int message_array0[257]);
 
 
 int main()
@@ -27,11 +28,13 @@ int main()
 	compared(ret);
 
 	char message0[321] = { 0, };
-	char message1[321] = { 0, };
-	int message_array[321] = { 0, };
+	int message1[321] = { 0, };
+	
+	int message_array0[257] = { 0, };
 	int gett = 0;
 
 	plain(message0, message1, gett);
+	returntobinary(message1, message_array0);
 }
 int password(char pass0[6], char pass1[6])
 {
@@ -93,7 +96,23 @@ char plain(char message0[321], int message1[321], int gett)
 	for (int k = 0;k < 320;k++)
 	{
 		message1[k] = message0[k];
-		printf("%d", message1[k]);
+	}
+}
+void returntobinary(int message1[321], int message_array0[257])
+{
+	int i = 0;
+	for (i = 0;i < 257;i++)
+	{
+		message_array0[i] = message1[i] % 2;
+		message1[i] /= 2;
+	}
+	for (int j = 257; j < message_array0[i]; j--)
+	{
+		message_array0[j] = 0;
+	}
+	for (int k = 0;k < 257;k++)
+	{
+		printf("%d", message_array0[k]);
 	}
 }
 
