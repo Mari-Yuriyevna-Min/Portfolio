@@ -1,8 +1,6 @@
 # 🧭 About Me
 
-Hi, I'm Mari/Мари/마리. I'm currently studying Cyber Security(Major), focusing on low-level systems, C/C++, and reverse engineering
-
-## ✒️ Language
+Mari/Мари/마리. currently studying Cyber Security(Major)
 
 C99 / C++ / Assembly(ARM/x86) 
 
