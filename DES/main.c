@@ -9,13 +9,15 @@
 void compared(int ret);
 int password(char pass0[6], char pass1[6]);
 char plain(char message0[321], int message1[321], int gett); 
-void returntobinary(int message1[321], int message_array0[257]);
+void returntobinary(int message1[321], int isfull, int index, int binary0[257], int binary1[257], int binary2[257]);
 
 
 int main()
 {
 	char pass0[6];
 	char pass1[6];
+	int isfull=0;
+	int index=0;
 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 1);
 	printf("HELLO! I am Mari, and I am the developer of this program :)\nThis program does its best to encrypt your messages.\n");
@@ -30,11 +32,13 @@ int main()
 	char message0[321] = { 0, };
 	int message1[321] = { 0, };
 	
-	int message_array0[257] = { 0, };
+	int binary0[257] = { 0, };
+	int binary1[257] = { 0, };
+	int binary2[257] = { 0, };
 	int gett = 0;
 
 	plain(message0, message1, gett);
-	returntobinary(message1, message_array0);
+	returntobinary(message1,binary0, binary1, binary2);
 }
 int password(char pass0[6], char pass1[6])
 {
@@ -98,21 +102,18 @@ char plain(char message0[321], int message1[321], int gett)
 		message1[k] = message0[k];
 	}
 }
-void returntobinary(int message1[321], int message_array0[257])
+void returntobinary(int message1[321], int isfull, int index, int binary0[257], int binary1[257], int binary2[257])
 {
 	int i = 0;
-	for (i = 0;i < 257;i++)
-	{
-		message_array0[i] = message1[i] % 2;
-		message1[i] /= 2;
-	}
-	for (int j = 257; j < message_array0[i]; j--)
-	{
-		message_array0[j] = 0;
-	}
-	for (int k = 0;k < 257;k++)
-	{
-		printf("%d", message_array0[k]);
-	}
+	int j = 0;
+
+	for(i=0;i<320;i++)
+		{
+			for(j=0;j<256;j++)
+				{
+					
+
+				
+	
 }
 
