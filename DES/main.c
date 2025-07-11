@@ -9,8 +9,7 @@
 void compared(int ret);
 int password(char pass0[6], char pass1[6]);
 char plain(char message0[321], int message1[321], int gett); 
-void returntobinary(int message1[321], int isfull, int index, int binary0[257], int binary1[257], int binary2[257]);
-
+void returntobinary(int message1[321], int binary0[257][10]);
 
 int main()
 {
@@ -31,14 +30,12 @@ int main()
 
 	char message0[321] = { 0, };
 	int message1[321] = { 0, };
+	int binary0[257][10] = { {0, }, {0, } };
 	
-	int binary0[257] = { 0, };
-	int binary1[257] = { 0, };
-	int binary2[257] = { 0, };
 	int gett = 0;
 
 	plain(message0, message1, gett);
-	returntobinary(message1,binary0, binary1, binary2);
+	returntobinary(message1,binary0);
 }
 int password(char pass0[6], char pass1[6])
 {
@@ -102,18 +99,25 @@ char plain(char message0[321], int message1[321], int gett)
 		message1[k] = message0[k];
 	}
 }
-void returntobinary(int message1[321], int isfull, int index, int binary0[257], int binary1[257], int binary2[257])
+void returntobinary(int message1[321], int binary0[257][10])
 {
 	int i = 0;
 	int j = 0;
-
-	for(i=0;i<320;i++)
+	int k = 0;
+	for (i = 0; i < 320; i++)
+	{
+		char c = message1[i];
+		for (int b = 7; b >= 0; b--)
 		{
-			for(j=0;j<256;j++)
-				{
-					
-
-				
-	
+			binary0[j][k] = (c >> b) & 1;
+			k++;
+			if (k == 10)
+			{
+				k = 0;
+				j++;
+				if (j == 257) break;
+			}
+		}
+	}	
 }
 
