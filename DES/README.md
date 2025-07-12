@@ -1,2 +1,2 @@
 # DES
-This is a result of implementing DES solely using the C language without any modules.
+This is a project that fully implements the DES encryption algorithm using only C99 without any external modules.
