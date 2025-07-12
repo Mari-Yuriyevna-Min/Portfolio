@@ -130,6 +130,7 @@ int returntobinary(int message1[321], int binary0[257][10])
 		}
 		
 		int modbinary = (320 - binarysize);
+		// 이 뒤부터 비어있는 행 0으로 채우기
 		
 	}	
 }
