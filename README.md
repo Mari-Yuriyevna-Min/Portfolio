@@ -8,4 +8,4 @@ C99 / C++ / Assembly(ARM/x86)
 
 ## 🛰️ Technologies of interest
 
-Aerospace technology / Reverse Engineering / Cyber Security 
+Reverse Engineering / Cyber Security 
