@@ -1,7 +1,6 @@
 # 🧭 About Me
 
-Mari/Мари/마리. Student in Univ, currently studying Cyber Security(Major). Min Yusol
-
+Mari/Мари/마리. Student in Univ, currently studying Cyber Security(Major).
 ## ✒️ Language
 
 C99 / C++ / Assembly(ARM/x86) 
