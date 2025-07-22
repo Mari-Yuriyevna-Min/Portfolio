@@ -1,6 +1,6 @@
 # 🧭 About Me
 
-Mari/Мари/마리. Student in Univ, currently studying Cyber Security(Major). 
+Mari/Мари/마리. Student in Univ, currently studying Cyber Security(Major). Min Yusol
 
 ## ✒️ Language
 
